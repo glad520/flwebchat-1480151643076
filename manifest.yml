@@ -1,0 +1,11 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: flwebchat
+  host: flwebchat
+  disk_quota: 1024M
+  services:
+  - Conversation-fl
+  - Speech to Text-fl
